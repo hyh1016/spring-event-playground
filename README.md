@@ -6,4 +6,4 @@
 
 Author: **[@hyh1016](https://github.com/hyh1016)**
 
-사용 버전: Java 21 & Spring Boot 3.2
+사용 버전: Java 17 & Spring Boot 3.1
