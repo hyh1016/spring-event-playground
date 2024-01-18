@@ -24,13 +24,15 @@ public class BombServiceTests {
     }
 
     @Test
-    void asyncEventListener_throw_notPropagate() {
+    void asyncEventListener_throw_notPropagate() throws InterruptedException {
         assertDoesNotThrow(() -> bombService.throwBomb(BombType.ASYNC_EVENT_LISTENER));
+        Thread.sleep(2000);
     }
 
     @Test
-    void asyncTransactionalEventListener_throw_notPropagate() {
+    void asyncTransactionalEventListener_throw_notPropagate() throws InterruptedException {
         assertDoesNotThrow(() -> bombService.throwBomb(BombType.ASYNC_TRANSACTIONAL_EVENT_LISTENER));
+        Thread.sleep(2000);
     }
 
 }
